@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    overflow-x: hidden;
+}
+/* @media(min-width: 800px) and (max-width: 1100px){
+    .heading{
+        position: fixed;
+
+    }
+} */
+@media (min-width: 400px) and (max-width: 1507px) {
+    .heading {
+        position: fixed;
+    }
+}
+
+@media (max-width: 800px) {
+    .heading h1 {
+        font-size: 120px;
+        right: 180px;
+    }
+
+    #logo img {
+        height: 50px;
+    }
+
+    nav h2 {
+        font-size: 20px;
+        width: auto;
+        left: 20px;
+        top: 5px;
+    }
+
+    .boxes {
+        width: 100%;
+    }
+
+    #box2 {
+        left: 0;
+        width: 100%;
+    }
+
+    #box3 {
+        left: 0;
+        width: 100%;
+    }
+
+    .allevents {
+        width: 100%;
+    }
+
+    #nameevent1,
+    #nameevent2,
+    #nameevent3,
+    #nameevent4,
+    #nameevent5 {
+        left: 10px;
+    }
+
+    #nameevent1 h1,
+    #nameevent2 h1,
+    #nameevent3 h1,
+    #nameevent4 h1,
+    #nameevent5 h1 {
+        font-size: 40px;
+    }
+
+    #nameevent1 p,
+    #nameevent2 p,
+    #nameevent3 p,
+    #nameevent4 p,
+    #nameevent5 p {
+        width: 100%;
+        text-align: left;
+        left: 0;
+    }
+
+    #img1,
+    #img2,
+    #img3,
+    #img4,
+    #img5 {
+        height: 200px;
+        top: -170px;
+    }
+}
+
+#bg1,
+#bg2,
+#bg3 {
+    position: absolute;
+}
+
+#bg1{
+    position: absolute;
+    top: 150px;
+    left: 60px;
+}
+#bg2{
+    position: absolute;
+    top: 2000px;
+    left: 180px;
+}
+#bg3{
+    position: absolute;
+    top: 3400px;
+    left: 180px;
+}
+#logo img{
+    height: 87px;
+}
+nav h2{
+    color: white;
+    font-size: 40px;
+    background-color: black;
+    height: 73px;
+    width: 176px;
+    text-align: center; 
+    position: absolute;
+    top: 10px;
+    left: 657px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: light;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    width: 553px;
+    height: 155px;
+    background-color: cyan;
+}
+#box1{
+    position: absolute;
+    top: 280px;
+    width: 340px;
+}
+#box2{
+    position: absolute;
+    top: 280px;
+    left: 1266px;
+    width: 270px;
+}
+#box3{
+    position: absolute;
+    top: 247px;
+    left: 1219px;
+    width: 314px ;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    background-color: rgb(0, 0, 33);
+    z-index: -1 ;
+}
+.heading h1{
+    color: white;
+    align-items: center;
+    position: absolute;
+    top:213px;
+    right: 380px;
+    font-size: 200px;
+    font-family: 'Karantina', system-ui;
+}
+.events{
+    color: white;
+    /* height: 589px;
+    width: 1262px; */
+    display: grid;
+    grid-template-rows: repeat(5, 300px);
+    grid-gap: rem;
+    
+}
+.allevents{
+    /* border: 1px solid white; */
+    height: 500px;
+    width: 1072px;
+}
+#nameevent1{
+    position: relative;
+    top: 600px;
+    left: 213px;
+}
+#logo1{
+    position: relative;
+    top: 30px;
+    left: 440px;
+}
+#img1{
+    height: 500px;
+    position: relative;
+    top: -330px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#nameevent1 h1{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Saira Condensed', sans-serif;
+font-weight: bolder;
+font-size: 80px;
+position: relative;
+top: 70px;
+left: 153px;
+}
+#nameevent1 p{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Saira Condensed', sans-serif;
+font-weight: light;
+text-align: right;
+width: 734px;
+position: relative;
+top: 90px;
+left: 163px;
+}
+#nameevent2{
+    position: relative;
+    top: 1000px;
+    left: 213px;
+}
+#logo2{
+    position: relative;
+    top: 30px;
+    left: 382px;
+}
+#img2 {
+    height: 500px;
+    position: relative;
+    top: -372px;
+    z-index: -1;
+    opacity: 0.6;
+}
+#nameevent2 h1{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Saira Condensed', sans-serif;
+font-weight: bolder;
+font-size: 80px;
+position: relative;
+top: 51px;
+left: 296px;
+}
+#nameevent2 p{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Saira Condensed', sans-serif;
+font-weight: light;
+text-align: right;
+width: 734px;
+position: relative;
+top: 69px;
+left: 163px;
+}
+#nameevent3{
+    position: relative;
+    top: 1400px;
+    left: 213px;
+}
+#img3{
+    height: 500px;
+    z-index: -1;
+    position: relative;
+    top: -372px;
+    opacity: 0.6;
+}
+#logo3{
+    position: relative;
+    top: 30px;
+    left: 382px;
+}
+#nameevent3 h1{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Saira Condensed', sans-serif;
+font-weight: bolder;
+font-size: 80px;
+position: relative;
+top: 51px;
+left: 250px;
+}
+#nameevent3 p{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Saira Condensed', sans-serif;
+font-weight: light;
+text-align: right;
+width: 734px;
+position: relative;
+top: 69px;
+left: 163px;
+}
+#nameevent4{
+    position: relative;
+    top: 1800px;
+    left: 213px;
+}
+#img4{
+    height: 500px;
+    z-index: -1;
+    position: relative;
+    top: -372px;
+    opacity: 0.6;
+}
+#logo4{
+    position: relative;
+    top: 30px;
+    left: 382px;
+}
+#nameevent4 h1{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Saira Condensed', sans-serif;
+font-weight: bolder;
+font-size: 80px;
+position: relative;
+top: 51px;
+left: 318px;
+}
+#nameevent4 p{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Saira Condensed', sans-serif;
+font-weight: light;
+text-align: right;
+width: 734px;
+position: relative;
+top: 69px;
+left: 163px;
+}
+#nameevent5{
+    position: relative;
+    top: 2200px;
+    left: 213px;
+}
+#img5{
+    height: 500px;
+    z-index: -1;
+    position: relative;
+    top: -372px;
+    opacity: 0.6;
+}
+#logo5{
+    position: relative;
+    top: 30px;
+    left: 382px;
+}
+#nameevent5 h1{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: 80px;
+    position: relative;
+    top: 51px;
+    left: 318px;
+}
+#nameevent5 p{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: light;
+    text-align: right;
+    width: 734px;
+    position: relative;    
+    top: 69px;
+    left: 163px;
+}   
+.container2{
+    position: absolute;
+    top: 5000px;
+    background-color: #D1F7FF;
+    width: 100vw;
+    height: 520px;
+}
+.container2 h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #00567B;
+    font-size: 50px;
+    position: relative;
+    top: 80px;
+    left: 900px;
+}
+.container2 ul li{
+    text-decoration: none;
+    list-style: none;
+    color: #00567B;
+    font-size: 30px;
+    position: relative;
+    top: -128px;
+    left: 910px;
+}
+.container2 img{
+    position: relative;
+    top: 47px;
+    left: 261px;
+}
+.container2 P{
+    font-size: 22px;
+    color: #00567B;
+    position: relative;
+    top: -14px;
+    left: 619px;
+}
